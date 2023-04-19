@@ -15,7 +15,7 @@ spec:
         app: vprodb
     spec:
       containers:
-      - name: vproapp
+      - name: vprodb
         image: chaitanya2616/vprofiledb:V1
         args:
           - "--ignore-db-dir=lost+fount"
