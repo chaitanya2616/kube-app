@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vprodb
+  name: vproapp
   labels:
-    app: vprodb
+    app: vproapp
 spec:
-  selector:
-    matchLables:
-      app: vprodb
   replicas: 1
+  selector:
+    matchlabels:
+      app: vproapp
   template:
     metadata:
-      lables:
-        app: vprodb
-    specs:
+      labels:
+        app: vproapp
+    spec:
       containers:
-        - name: vprodb
+      - name: vproapp
           image: chaitanya2616/vprofiledb:V1
           args:
           - "ignore-db-dir=lost+fount"
