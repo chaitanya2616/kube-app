@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vpromq01
-  lables:
+  labels:
     app: vpromq01
 spec:
   selector:
@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         app: vpromq01
-    specs:
+    spec:
       containers:
         - name: vpromq01
           image: rabbitmq
