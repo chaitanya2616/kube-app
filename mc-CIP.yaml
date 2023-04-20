@@ -1,5 +1,5 @@
 apiVesrion: v1
-kind: service
+kind: Service
 metadata:
   name: vprocache01
 spec:
